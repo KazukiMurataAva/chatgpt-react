@@ -1,0 +1,149 @@
+/* ChatApp.css */
+
+body {
+  background-color: #121212; /* ダークモードの背景色 */
+  color: #ffffff; /* ダークモードのテキスト色 */
+  font-family: Arial, sans-serif;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px; /* チャット履歴の横幅を広げる */
+  margin: 10px auto 0; /* 上部のマージンを調整 */
+  padding: 20px;
+  border: 1px solid #444; /* ダークモードのボーダー色 */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* ダークモードのボックスシャドウ */
+}
+
+
+.chat-history {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #333; /* ダークモードのメッセージ背景色 */
+}
+
+footer {
+  text-align: center; /* テキストを中央に揃える */
+  padding: 10px; /* 適切な余白を追加 */
+  background-color: #333; /* ダークモードの背景色 */
+  color: #ffffff; /* ダークモードのテキスト色 */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333; /* ダークモードの入力欄背景色 */
+  padding: 10px;
+  justify-content: center; /* 水平方向に中央寄せ */
+  align-items: center; /* 垂直方向に中央寄せ */
+}
+
+.input-container input {
+  flex: 1;
+  width: calc(30% - 18px); /* ボーダーと余白を考慮して横幅を広げる */
+  padding: 8px;
+  border: 1px solid #444; /* ダークモードのボーダー色 */
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #555; /* ダークモードの入力欄背景色 */
+  color: #ffffff; /* ダークモードのテキスト色 */
+  
+  /* 選択時のハイライトをなくす */
+  outline: none;
+}
+
+
+
+.input-container button {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: #45a049;
+}
+
+
+/* ChatApp.css */
+.app-header {
+  background-color: #333;
+  color: #fff;
+  padding: 0px;
+  height: 10%; /* 画像の高さを小さくする */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* ChatApp.css */
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info img {
+  border-radius: 50%;
+  margin-right: 8px;
+  width: 30px; /* 画像の幅を小さくする */
+  height: 30px; /* 画像の高さを小さくする */
+}
+
+.user-info button {
+  margin-right: 8px;
+  width: 100px; /* 画像の幅を小さくする */
+  height: 50px; /* 画像の高さを小さくする */
+}
+
+.user-info span {
+  font-size: 14px; /* テキストのフォントサイズを小さくする */
+}
+
+.signin-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 画面の高さいっぱいにボタンを配置する */
+}
+
+.signin-button button {
+  padding: 10px;
+  width: 400px; /* 画像の幅を小さくする */
+  height: 100px; /* 画像の高さを小さくする */
+  background-color: #333;
+  border-radius: 1%;
+  color: #fff; /* テキストのカラーを指定 */
+  font-size: 23px; /* テキストのサイズを指定 */
+}
+
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 画面の高さいっぱいにボタンを配置する */
+}
+
+.loading p {
+  padding: 10px;
+  width: 400px; /* 画像の幅を小さくする */
+  height: 200px; /* 画像の高さを小さくする */
+  border-radius: 1%;
+  font-size: 24px; /* テキストのサイズを指定 */
+}
