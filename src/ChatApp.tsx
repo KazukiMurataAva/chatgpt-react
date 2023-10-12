@@ -48,7 +48,6 @@ const ChatComponent = () => {
       setChatHistory((prevHistory) => [...prevHistory, userMessage]);
 
       const response = await axios.post( domain + '/api/chat', { inputText });
-      console.log(domain);
       const gptMessage = { id: response.data.lastMessageId, message: `GPT: ${response.data.response}` };
       setChatHistory((prevHistory) => [...prevHistory, gptMessage]);
 
